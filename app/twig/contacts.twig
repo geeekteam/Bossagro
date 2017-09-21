@@ -1,0 +1,73 @@
+{% extends "layouts/app.twig" %}
+
+{% block pageTitle %}Статья{% endblock %}
+
+{% block content %}
+
+    <div class="contacts-page">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item"><a class="link-with-underline link-gray" href="/">Главная</a></li>
+                <li class="breadcrumbs__item"><a class="link-with-underline link-gray" href="#">Контакты</a></li>
+            </ul>
+            <div class="d-flex">
+                <div class="page-content">
+                    <h2 class="h2-title">Контакты</h2>
+                    <div class="contacts">
+                        <div class="contact">
+                            <h3 class="contact__title">Адрес редакции</h3>
+                            <p class="line-height-1_5"><span class="contacts__text">Республика Казахстан, 070002, г. Усть-Каменогорск, ул. Ворошилова, 62, офис, 29</span></p>
+                            <p class="line-height-1_5"><span class="contacts__text">Телефон редакции: <span class="d-inline-blok">+7 (7232) 22-55-95</span></p>
+                            <p class="line-height-1_5"><span class="contacts__text">Факс: <span class="d-inline-blok">+7 (7232) 75-30-56</span></span></p>
+                            <p class="line-height-1_5"><span class="contacts__text">E-mail: boss-agro@mail.ru</span></p>
+                        </div>
+                    </div>
+                    <div class="map">
+                        <h3 class="contact__title">Как к нам проехать</h3>
+                        <iframe src="https://yandex.kz/map-widget/v1/-/CBQXYXQ8SD" width="100%" height="400" frameborder="0"></iframe>
+                    </div>
+                    <form class="feedback" action="#">
+                        <p class="feedback__title">Напишите нам</p>
+                        <p class="feedback__subtitle">Вы можете написать нам, заполнив поля ниже:</p>
+                        <div class="d-flex mb10">
+                            <div class="feedback__input-wrapper"><input class="default-input" type="text" placeholder="Имя*"></div>
+                            <div class="feedback__input-wrapper"><input class="default-input" type="text" placeholder="Номер телефона*"></div>
+                            <div class="feedback__input-wrapper"><input class="default-input" type="text" placeholder="E-mail*"></div>
+                        </div>
+                        <div class="mb10"><input class="default-input" type="text" placeholder="Тема"></div>
+                        <div class="textarea-wrapper">
+                            <textarea class="default-textarea" placeholder="Текст сообщения"></textarea>
+                        </div>
+                        <span class="add-comment__button button button_green" href="#">Отправить</span>
+                    </form>
+                </div>
+                <div class="sidebar">
+                    <div class="journal">
+                        <a class="journal__button button button_green" href="#">Читать журнал</a>
+                    </div>
+                    <div class="sidebar-grid-images">
+                        <div class="sidebar-grid-image">
+                            <a class="link-image" href="http://zlak.info/" target="_blank"><img src="images/sidebar-image-1.jpg"></a>
+                        </div>
+                        <div class="sidebar-grid-image">
+                            <a class="link-image" href="http://zlak.info/" target="_blank"><img src="images/sidebar-image-2.jpg"></a>
+                        </div>
+                        <div class="sidebar-grid-image">
+                            <a class="link-image" href="#" target="_blank"><img src="images/sidebar-image-3.jpg"></a>
+                        </div>
+                        <div class="sidebar-grid-image">
+                            <a class="link-image" href="http://agriastana.kz/ru/" target="_blank"><img src="images/sidebar-image-4.jpg"></a>
+                        </div>
+                    </div>
+                    <div class="sidebar-ban-wrapper">
+                        <img src="images/ban.jpg" alt="" class="sidebar__ban">
+                    </div>
+                    <div class="sidebar-gismeteo">
+                        <img src="images/gismeteo.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
