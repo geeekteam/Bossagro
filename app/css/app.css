@@ -1617,6 +1617,22 @@ a {
   margin-right: 15px;
 }
 
+.preview-page {
+  height: 100vh;
+}
+
+.preview-page__links {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 50px 0;
+}
+
+.preview-page__link {
+  font-size: 28px;
+}
+
 .mobile-menu-modal {
   position: fixed;
   top: 0;
